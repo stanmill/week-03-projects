@@ -49,6 +49,7 @@ class App extends Component {
       
       //200 means ok internet protocol
       if(response.status === 200){
+        //converting to json data to easly manipulate it
         return response.json();
       }else{
         throw "Not Found";
