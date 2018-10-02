@@ -4,7 +4,7 @@ import './App.css';
 
 //outline when the user enters a valid zipcode
 function City(props){
-  return (<div>
+  return (<div className="fluid-container">
     <h1>{props.City}</h1>
     <p>State: {props.State}</p>
     <p>Location: {props.Location}</p>
@@ -20,7 +20,7 @@ function ZipSearchField(props){
   return (<div>
     <form>
       <label>Zip Code: </label>
-      <input type="text" className="form-control" onChange={props.changeHandler}/>
+      <input type="text" maxLength="6" className="form-control" onChange={props.changeHandler}/>
     </form>
   </div>);
 
